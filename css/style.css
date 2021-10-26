@@ -110,6 +110,24 @@ body{
   position: relative;
 }
 
+.slider-buttons{
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.slider-button{
+  cursor: pointer;
+}
+
+.swiper{
+  position: relative;
+}
+
 .slide-title{
 margin-top: 0;
 margin-bottom: 15px;
@@ -148,8 +166,20 @@ margin-bottom: 30px;
   line-height: 23px;
 }
 
+.slide-autemn{
+  background-image: url(../img/autemn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .slide-summer{
   background-image: url(../img/summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-vita{
+  background-image: url(../img/vita.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -286,6 +316,9 @@ margin-bottom: 30px;
   height: 182px;
   border-radius: 18px;
   overflow: hidden;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  
+  
 }
 
 .delivery-image{
@@ -462,14 +495,37 @@ padding-bottom: 60px;
 display: flex;
 justify-content: space-between;
 margin-left: -37px;
+
 }
 
 .advan-card{
+  display: block;
+  justify-content: center;
   max-width: 270px;
+  max-height: 296px;
   border-radius: 20px;
   overflow: hidden;
   background-color: #fff;
   margin: 37px;
+  border-radius: 20px;
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+
+}
+
+.adv-image{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.a-image{
+  max-width: 60px;
+  max-height: 56px;
+
 }
 
 
@@ -480,7 +536,9 @@ margin-left: -37px;
   font-size: 16px;
   line-height: 23px;
   text-align: center;
-
+  max-height: 46px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .advan-description{
@@ -527,6 +585,78 @@ margin-left: -37px;
   margin-left: 20px;
   text-decoration: none;
 }
+
+@media (max-width: 1260px){
+  .container{
+    max-width: 960px;
+  }
+
+  .search-form{
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .tabs-content{
+    flex-wrap: wrap;
+  }
+  
+  .advantages-content{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 992px){
+  .container{
+    max-width: 760px;
+  }
+
+  .slide{
+    padding: 70px;
+  }
+
+  .delivery-card{
+    width: calc(50% - 30px);
+  }
+
+  .footer-logo{
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px){
+.container{
+    max-width: 560px;
+  }
+
+  .header{
+    flex-wrap: wrap;
+  }
+
+  .promo{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px){
+  .container{
+    max-width: 90%;
+  }
+
+  .tabs-card{
+    max-width: 100%
+  }
+
+  .delivery-card{
+    max-width:100%
+  }
+
+  .card.sweet-basket{
+    max-width:100%
+  }
+}
+
+
+
  
 
 
